@@ -1,5 +1,4 @@
 ![image](https://github.com/user-attachments/assets/c37fe443-4555-46cb-9224-0fd8087a3607)
-
 # Read Before Use  
 **Use at your own risk.**  
 
@@ -10,7 +9,7 @@
 ---
 
 # How to Use  
-1. Copy the script from `badside.js` in the repository.  
+1. Copy the script from [**badside.js**](https://github.com/JasimAlrawie/farmrpg-badside/blob/main/badside.js) in the repository.  
 2. Go to the FarmRPG website.  
 3. Press `F12` or right-click and select "Inspect" from the context menu.  
 4. Go to the "Console" tab, paste the script, and press `Enter`.  
