@@ -1,29 +1,37 @@
 ![image](https://github.com/user-attachments/assets/c37fe443-4555-46cb-9224-0fd8087a3607)
 
-# Read before use
-**use at your own risk**
+# Read Before Use  
+**Use at your own risk.**  
 
-**i'm not responsible if you get banned !!**
+**I am not responsible if you get banned!**  
 
-**for me i didn't get banned but that doesnt mean you should use it :)**
+**I haven't been banned, but that doesn't mean you won't be. Use it at your own discretion.**  
 
-# how to use
-* copy the script from badside.js in the repo
-* goto FarmRPG website
-* Press F12 or inspect from the context menu
-* goto console and paste the script and press enter
-* extra thing: you can put the script in snippit if you want to use it multiple time :)
+---
 
-# configuration
-you can modify some part of the code
+# How to Use  
+1. Copy the script from `badside.js` in the repository.  
+2. Go to the FarmRPG website.  
+3. Press `F12` or right-click and select "Inspect" from the context menu.  
+4. Go to the "Console" tab, paste the script, and press `Enter`.  
+5. Optional: You can save the script in a snippet if you want to use it multiple times.  
 
-like the clicks per second and sells intervals
+---
 
-**also i put comments to inform you how to change things**
+# Configuration  
+You can modify parts of the code, such as:  
+- Clicks per second  
+- Sell intervals  
 
-# list of cheats
-* auto fish
-* auto explore
-* auto worm
-* auto iron
-* auto sell all
+**Comments are included to guide you on how to make these changes.**  
+
+---
+
+# List of Cheats  
+- Auto Fish  
+- Auto Explore  
+- Auto Worm  
+- Auto Iron  
+- Auto Sell All  
+
+*Auto Pet Animals* - Coming soon!  
