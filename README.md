@@ -3,7 +3,7 @@
 
 **i'm not responsible if you get banned !!**
 
-**for me i didnt get banned but that doesnt mean you should use it :)**
+**for me i didn't get banned but that doesnt mean you should use it :)**
 
 # how to use
 * copy the script from badside.js in the repo
@@ -15,11 +15,9 @@
 # configuration
 you can modify some part of the code
 
-like the clicks per second and sells interval
+like the clicks per second and sells intervals
 
 **also i put comments to inform you how to change things**
-
-
 
 # list of cheats
 * auto fish
