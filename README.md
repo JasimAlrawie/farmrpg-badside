@@ -34,3 +34,5 @@ You can modify parts of the code, such as:
 - Auto Iron  
 - Auto Sell All  
 - Auto Per all (chicken, cows) for now
+
+**next gonna be auto All passwords maybe :p**
