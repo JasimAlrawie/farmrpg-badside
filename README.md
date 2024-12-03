@@ -1,4 +1,5 @@
-![image](https://github.com/user-attachments/assets/c37fe443-4555-46cb-9224-0fd8087a3607)
+![image](https://github.com/user-attachments/assets/7a91e707-b60d-4b79-bc87-7420f01744bd)
+
 # Read Before Use  
 **Use at your own risk.**  
 
@@ -32,5 +33,4 @@ You can modify parts of the code, such as:
 - Auto Worm  
 - Auto Iron  
 - Auto Sell All  
-
-*Auto Pet Animals* - Coming soon!  
+- Auto Per all (chicken, cows) for now
