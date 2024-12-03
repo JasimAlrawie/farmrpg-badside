@@ -8,6 +8,10 @@ github reop: https://github.com/JasimAlrawie/farmrpg-badside
 use it on your risk i'm not responsible if you get banned :)
 -----------------------------------------------------------
 */
+function delay(ms){
+    return new Promise(res=>{setTimeout(res,ms)})
+}
+
 let 
 autoFish = false,
 autoExplore = false,
@@ -31,7 +35,11 @@ $("<div></div>")
     left : "32px",
     display : "flex",
     flexDirection:"column",
-    gap:"4px"
+    gap:"4px",
+    width : "200px",
+    background : "peachpuff",
+    padding : "4px",
+    borderRadius : "4px"
 })
 .appendTo("body")
 
@@ -45,6 +53,20 @@ function createBadButton(label,callback){
         cursor : "pointer"
     })
     .click(callback)
+    .appendTo("#badside")
+}
+function createBadInput(id,ph,type="number",value=10){
+    $(`<input id="${id}" type="${type}" value=${value} placeholder="${ph}" min="0"/>`)
+    .css({
+        fontSize : "1.5em",
+        border : "none",
+        textAlign : "center"
+    })
+    .appendTo("#badside")
+}
+function badBreak(){
+    $("<hr/>")
+    .css({border:"2px solid white",width:"100%"})
     .appendTo("#badside")
 }
 createBadButton("Auto Fish",e=>{
@@ -123,8 +145,44 @@ createBadButton("Auto Iron",e=>{
         clearInterval(ironLoop)
     }
 })
-
+badBreak()
+createBadButton("Pet Cows",async (e)=>{
+    const count = parseInt($("#badcows")[0].value)
+    e.target.disabled = true
+    for(let i=1;i<=count;i++){
+        await delay(250)
+        await fetch(`https://farmrpg.com/worker.php?go=petcow&num=${i}`)
+        $(e.target).css({
+            width : `${i/count*100}%`
+        }).html(`${parseInt(i/count*100)}%`)
+        console.log("pet")
+    }
+    e.target.disabled = false
+    $(e.target).html("Pet Cows")
+})
+createBadInput("badcows","Cow Count")
+badBreak()
+createBadButton("Pet Chicken",async (e)=>{
+    const count = parseInt($("#badchickens")[0].value)
+    e.target.disabled = true
+    for(let i=1;i<=count;i++){
+        await delay(250)
+        await fetch(`https://farmrpg.com/worker.php?go=petchicken&num=${i}`)
+        $(e.target).css({
+            width : `${i/count*100}%`
+        }).html(`${parseInt(i/count*100)}%`)
+    }
+    e.target.disabled = false
+    $(e.target).html("Pet Chicken")
+})
+createBadInput("badchickens","Chicken Count")
+badBreak()
 createBadButton("Eject",()=>{
+    clearInterval(fishLoop)
+    clearInterval(exploreLoop)
+    clearInterval(autoSell)
+    clearInterval(wormLoop)
+    clearInterval(ironLoop)
     $("#badside").remove()
 })
 })()
